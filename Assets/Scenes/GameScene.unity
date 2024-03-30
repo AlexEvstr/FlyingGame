@@ -1956,7 +1956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &655624595
 Transform:
   m_ObjectHideFlags: 0
@@ -3224,7 +3224,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3f573788115df45c586c9397aad445aa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af5b23eb689e349b1bf334a3bd462e8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3289,7 +3289,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: badc5c2ee5a844ec5a7c7c5cf573081a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lookAt: {fileID: 0}
+  _players:
+  - {fileID: 21300000, guid: af5b23eb689e349b1bf334a3bd462e8b, type: 3}
+  - {fileID: 21300000, guid: b00fa0cf025f54907b2ab3cfea7476ec, type: 3}
+  - {fileID: 21300000, guid: 3f573788115df45c586c9397aad445aa, type: 3}
+  - {fileID: 21300000, guid: c63f42860340c4b81967f64117566ca0, type: 3}
+  - {fileID: 21300000, guid: d786cb6c8d1c847a68af5f5812258a6d, type: 3}
   fixedJoistick: {fileID: 1772699026}
   rb: {fileID: 1217899137}
 --- !u!114 &1217899140

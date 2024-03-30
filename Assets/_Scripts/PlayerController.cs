@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private GameObject _lookAt;
+    [SerializeField] private Sprite[] _players;
 
     private float _speed = 5.0f;
     public FixedJoystick fixedJoistick;
@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        gameObject.GetComponent<SpriteRenderer>().sprite = _players[PlayerPrefs.GetInt("planeNum", 0)];
         gameObject.AddComponent<PolygonCollider2D>();
     }
 

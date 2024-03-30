@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
@@ -8,7 +6,7 @@ public class PlayerCollision : MonoBehaviour
     {
        if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Enemy");
+            //Debug.Log("Enemy");
         }
     }
 }

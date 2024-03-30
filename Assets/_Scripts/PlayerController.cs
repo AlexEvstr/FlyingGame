@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -10,7 +8,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-       
         Vector2 finalMoveDir = (Vector2.up * fixedJoistick.Vertical +
                                 Vector2.right * fixedJoistick.Horizontal);
         finalMoveDir *= Time.deltaTime * _speed;
